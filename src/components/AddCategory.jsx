@@ -10,7 +10,7 @@ export const AddCategory = ( { onNewCategory } ) => {
 
     // const inputSearch = useRef()
     const [inputValue, setinputValue] = useState('');
-    const {navHeight,inputWidth,left,leftMobile} = navBarScroll();
+    const {navHeight,left,leftMobile} = navBarScroll();
     const [width] = UseWindowSize();
 
   // Cambia el valor del input y quita los espacios
@@ -56,9 +56,9 @@ export const AddCategory = ( { onNewCategory } ) => {
                     value={ inputValue }
                     onChange={ onInputChange }
                     style={{
-                        width: width < 970 ? inputWidth : '70%' ,
-                        left:  width < 970 ? leftMobile : left,
-                        transition: width < 970 ? "all .3s" : "all .8s" , 
+                        width: width < 970 ? '60%' : '70%',
+                        transform: width < 970 ? leftMobile : left ,
+                        transition: width < 970 ? "transform .5s" : "all .8s" , 
                     }}
                 />       
             </div>
