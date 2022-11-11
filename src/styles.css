@@ -145,6 +145,8 @@
     border-radius: 0.6rem;
     overflow: hidden;
     cursor: pointer;
+    background: -webkit-linear-gradient(315deg,#e09,#d0e);
+    background: linear-gradient(135deg,#e09 46%,#FFCC70 100%);
   }
   .card:hover{
     opacity: 0.5;

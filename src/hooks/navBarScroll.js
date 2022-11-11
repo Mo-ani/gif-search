@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 export const navBarScroll = () => {
     const [navHeight, setNavHeight] = useState("8rem");
+    const [navHeightMobile, setNavHeightMobile] = useState("5rem");
     const [opacity, setOpacity] = useState('1');
     const [left, setLeft] = useState("translate(-50%,-50%)");
     const [leftMobile, setLeftMobile] = useState('translate(-20%,-50%)');
@@ -11,6 +12,7 @@ export const navBarScroll = () => {
 
     const listenScrollEvent = () => {
       window.scrollY > 10 ? setNavHeight("6rem") : setNavHeight("8rem");
+      window.scrollY > 10 ? setNavHeightMobile("3rem") : setNavHeightMobile("5rem");
       window.scrollY > 10 ? setLeft("translate(-63%,-50%)") : setLeft("translate(-50%,-50%)");
       window.scrollY > 10 ? setLeftMobile("translate(-50%,-50%)") : setLeftMobile(leftMobile);
       window.scrollY > 10 ? setOpacity("0") : setOpacity("1");
@@ -27,6 +29,7 @@ export const navBarScroll = () => {
         navHeight,
         opacity,
         left,
-        leftMobile
+        leftMobile,
+        navHeightMobile
     }
 }

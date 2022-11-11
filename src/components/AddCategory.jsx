@@ -10,7 +10,7 @@ export const AddCategory = ( { onNewCategory } ) => {
 
     // const inputSearch = useRef()
     const [inputValue, setinputValue] = useState('');
-    const {navHeight,left,leftMobile} = navBarScroll();
+    const {navHeight,left,leftMobile,navHeightMobile} = navBarScroll();
     const [width] = UseWindowSize();
 
   // Cambia el valor del input y quita los espacios
@@ -45,7 +45,7 @@ export const AddCategory = ( { onNewCategory } ) => {
             <div 
                 className='background-input' 
                 style={{
-                    height: width > 970 ? navHeight :'5.5rem',
+                    height: width > 970 ? navHeight : navHeightMobile,
                     transition: "all .5s"}}
                 
                 >
