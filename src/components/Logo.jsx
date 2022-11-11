@@ -11,7 +11,7 @@ export const Logo = () => {
              
             style={{ 
               opacity: opacity,
-              transition: 'opacity .4s' 
+              transition: 'opacity .6s' 
             }}
             className={width < 970 ? 'logo-up' : 'logo-left'} 
             src='https://i.postimg.cc/RF6Bv9Bq/gif-search-removebg-preview-1-1.png' 

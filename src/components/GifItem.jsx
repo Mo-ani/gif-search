@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import { UseWindowSize } from '../hooks/UseWindowSize'
+
 
 export const GifItem = ( {title,url} ) => {
 
@@ -15,13 +15,12 @@ export const GifItem = ( {title,url} ) => {
 
       <a href={url} 
        download target="_blank">
-
-        <motion.img
+       <motion.img
           src={ url } 
           alt={ title }
-          initial ={{ scale: 0} }
-          whileInView ={{scale: 1}}
-          />
+          initial ={{ opacity: 0} }
+          whileInView ={{ opacity: 1 }}
+        />
           
       </a>
         
