@@ -58,7 +58,7 @@ export const AddCategory = ( { onNewCategory } ) => {
                     style={{
                         width: width < 970 ? inputWidth : '70%' ,
                         left:  width < 970 ? leftMobile : left,
-                        transition: "left .5s, width .5s"
+                        transition: "left .8s, width .8s"
                     }}
                 />       
             </div>
